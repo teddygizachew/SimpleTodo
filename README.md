@@ -21,7 +21,8 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 * [x] App is further styled with colors
-
+* [x] The item to be added in the list must contain a string. If empty, user will see "Nothing to add" message.
+ 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
