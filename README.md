@@ -20,6 +20,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
+* [x] User sees a transition animation when going from the main screen to the edit item screen.
 * [x] App is further styled with colors
 * [x] The item to be added in the list must contain a string. If empty, user will see "Nothing to add" message.
  
