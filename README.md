@@ -20,9 +20,11 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-* [x] User sees a transition animation when going from the main screen to the edit item screen.
+* [x] User sees a transition animation when going from the main screen to the edit item screen
+* [x] User can **go back to main screen without having to make any changes** from the edit item screen
 * [x] App is further styled with colors
-* [x] The item to be added in the list must contain a string. If empty, user will see "Nothing to add" message.
+* [x] The item to be added in the list must contain a string. If empty, user will see "Nothing to add" message
+* [x] Added a launcher icon for the app
  
 ## Video Walkthrough
 
