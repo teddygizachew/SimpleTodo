@@ -68,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra(KEY_ITEM_POSITION, position);
                 // Display activity
                 startActivityForResult(intent, EDIT_TEXT_CODE);
+                overridePendingTransition(R.anim.right_in_animation, R.anim.left_out_animation);
             }
         } ;
         itemsAdapter = new ItemsAdapter(items, onLongClickListener, onClickListener);
@@ -78,14 +79,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String todoItem = etItem.getText().toString();
-                // Add item to model
-                items.add(todoItem);
-                // Notify adapter that an item is inserted
-                itemsAdapter.notifyItemInserted(items.size() - 1);
-                // Clear edit text once submitted
-                etItem.setText((""));
-                Toast.makeText(getApplicationContext(), "Item added successfully", Toast.LENGTH_SHORT).show();
-                saveItems();
+
+                if (etItem.getText().toString().equals("")) {
+                    Toast.makeText(getApplicationContext(), "Nothing to add", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    // Add item to model
+                    items.add(todoItem);
+                    // Notify adapter that an item is inserted
+                    itemsAdapter.notifyItemInserted(items.size() - 1);
+                    // Clear edit text once submitted
+                    etItem.setText((""));
+                    Toast.makeText(getApplicationContext(), "Item added successfully", Toast.LENGTH_SHORT).show();
+                    saveItems();
+                }
             }
         });
     }

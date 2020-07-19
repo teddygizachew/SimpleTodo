@@ -41,6 +41,15 @@ public class EditActivity extends AppCompatActivity {
 
                 // Finish activity, close screen and go back
                 finish();
+                overridePendingTransition(R.anim.left_in_animation, R.anim.right_out_animation);
+            }
+        });
+
+        findViewById(R.id.left_arrow).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+                overridePendingTransition(R.anim.left_in_animation, R.anim.right_out_animation);
             }
         });
     }
