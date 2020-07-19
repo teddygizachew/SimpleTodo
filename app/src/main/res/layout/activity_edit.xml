@@ -15,11 +15,10 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-
         android:layout_centerInParent="true"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="243dp"
-        android:layout_marginEnd="5dp"
+        android:layout_marginEnd="10dp"
         android:background="@drawable/edit_text_background"
         android:ems="10"
         android:hint="Edit text" />
@@ -32,17 +31,17 @@
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="162dp"
-        android:background="#E05265"
+        android:layout_marginEnd="152dp"
+        android:background="@drawable/custom_button"
         android:text="Save" />
 
     <ImageView
         android:id="@+id/left_arrow"
-        android:layout_width="33dp"
-        android:layout_height="35dp"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="6dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
         android:src="@drawable/ic_left_arrow" />
 </RelativeLayout>

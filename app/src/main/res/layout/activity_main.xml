@@ -5,18 +5,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     tools:context=".MainActivity">
 
 
     <Button
         android:id="@+id/btnAdd"
-        android:background="#E05265"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/custom_button"
         android:text="Add" />
 
     <EditText
@@ -25,9 +26,9 @@
         android:layout_height="48dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
         android:layout_toStartOf="@+id/btnAdd"
         android:background="@drawable/edit_text_background"
         android:ems="10"
@@ -35,7 +36,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvItems"
-        android:background="@drawable/bg"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/etItem"
